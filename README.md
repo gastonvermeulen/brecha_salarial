@@ -12,7 +12,9 @@ En consiguiente, se van a obtener datos que permitan comparar los salarios bruto
 ### **Consideraciones generales**
 ***
 Cabe destacar que la clasificación binaria realizada (hombre y mujer) resulta ineficiente para cubrir la complejidad comprendida en el concepto de género. Sin embargo, a los fines de este estudio cuando se hable de brecha salarial o de género será desde este enfoque tradicional debido a que los datos recolectados se encuentran plasmados de esta forma.  
+
 Los salarios informados son salarios brutos mensuales (exentos de aportes y deducciones  particulares) y se encuentran en pesos argentinos. Debido a lo dificultoso de interpretar los datos y visualizaciones del salario en pesos durante un período de varios años, a causa de la depreciación frente a la inflación, se van a utilizar salarios dolarizados. Dicha dolarización de los salarios no altera la brecha salarial que se obtendría al comparar salarios en pesos pero si permite una comparación en gráficas con mucha mayor claridad. La dolarización fue calculada con el valor del dólar libre o dólar blue respectivo de cada fecha para evitar confusiones al utilizar el dólar oficial en períodos de restricción cambiaria.  
+
 De las distintas clasificaciones de actividad que hay sobre las empresas se seleccionó la CLAE2 que cuenta con más de 80 categorías perfectamente descriptas.
 
 ### **Data**
@@ -55,7 +57,9 @@ Por último, si comparamos la brecha salarial del sector privado en Junio 2022 d
 ### **Conclusión**
 ***
 Teniendo en cuenta que este estudio no profundiza en la participación existente de hombres y mujeres en las diversas actividades económicas ni su distribución en cuanto a puestos que ocupan dentro de las organizaciones o empresas, es difícil determinar las causas que expliquen los números informados. Es cierto que hoy hay diversos enfoques y analizar esta problemática en detalle es sumamente complejo. Sin embargo se hace evidente que, tanto por una menor participación, por cobrar un menor salario a misma tarea realizada o por una menor cantidad de mujeres en puestos importantes o ejecutivos, las mujeres quedan rezagadas en cuanto al salario percibido plasmando la brecha salarial actual.  
+
 Otra cuestión que escapa de la incumbencia de este análisis es la informalidad existente en Argentina. El trabajo informal que se calcula está cercano al 40 % de los trabajadores totales seguramente altere estos resultados presentados y posiblemente los empeore.  
+
 A pesar de todo, es notorio destacar que en la gran mayoría de actividades hay una evolución favorable de esta brecha que se refleja en la disminución de la misma durante los 15 años comprendidos en el período 2007 al 2022. Esperemos que los factores que están influyendo positivamente, como políticas con perspectivas de género y fundamentalmente el abordamiento y una conciencia social diferente sobre estos temas, continuen ayudando para lograr lo más pronto posible un escenario de igualdad total.
  
 
