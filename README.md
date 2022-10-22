@@ -33,7 +33,8 @@ Si desea consultar la metodología utilizada por el Ministerio de Economía de l
 
 ### **Metodología**
 ***
-El proceso de extracción, transformación y carga de datos (ETL) puede verificarse en la Jupyter Notebook incluída en este repositorio en la carpeta de notebooks/brecha_salarial_notebook.ipynb.
+El proceso de extracción, transformación y carga de datos (ETL) puede verificarse en la sección de Metodología de la Jupyter Notebook incluída en este repositorio.  
+https://github.com/gastonvermeulen/brecha_salarial/blob/main/notebooks/brecha_salarial_notebook.ipynb
 
 ### **Comparación y visualización de los datos**
 ***
