@@ -3,40 +3,44 @@
 
 ###  **Introducción**
 ***
-En este proyecto se evalúa la brecha salarial existente en Argentina dentro del sector privado, utilizando los salarios brutos informados por las empresas a la Administración Federal de Ingresos Públicos (AFIP) sobre la nómina del personal en relación de dependencia. Estos informes se realizan mediante el formulario N° 931 y tienen carácter de declaración jurada. Las mismas empresas también deben declarar su actividad principal según un sistema de clasificación conocido como Clasificador de Actividades Económicas (CLAE).  
-El período analizado va desde Enero del 2007 a Junio 2022 basado en la información proporcionada a la fecha por las autoridades.  
-Por otro lado, la clasificación sobre el género que realizaron en este dataset es determinada a partir de la Clave Única de Identificación Tributaria (CUIT) o Documento Nacional de Identidad (DNI).  
-En consiguiente, se van a obtener datos que permitan comparar los salarios brutos entre hombres y mujeres durante todo ese período y segmentado por las distintas actividades.
+En este proyecto se evalúa la brecha salarial existente en Argentina dentro del sector privado durante el período que va desde Enero del 2007 a Junio del 2022.  
+
+Para el análisis se utilizaron los salarios brutos informados por las empresas a la Administración Federal de Ingresos Públicos (AFIP) sobre la nómina del personal en relación de dependencia. Las mismas empresas deben declarar su actividad principal según un sistema de clasificación conocido como Clasificador de Actividades Económicas (CLAE).  
+ 
+En el set de datos a trabajar, la clasificación sobre el género es determinada a partir de la Clave Única de Identificación Tributaria (CUIT) o Documento Nacional de Identidad (DNI).  
+
+En consiguiente, los datos permiten comparar los salarios brutos entre hombres y mujeres durante todo ese período y segmentado por las distintas actividades.
 
 
 ### **Consideraciones generales**
 ***
 Cabe destacar que la clasificación binaria realizada (hombre y mujer) resulta ineficiente para cubrir la complejidad comprendida en el concepto de género. Sin embargo, a los fines de este estudio cuando se mencione la brecha salarial o de género será desde este enfoque tradicional debido a que los datos recolectados se encuentran plasmados de esta forma.  
 
-Los salarios informados son salarios brutos mensuales (exentos de aportes y deducciones  particulares) y se encuentran en pesos argentinos. Debido a lo dificultoso de interpretar los datos y visualizaciones del salario en pesos durante un período de varios años, a causa de la depreciación frente a la inflación, se van a utilizar salarios dolarizados. Dicha dolarización de los salarios no altera la brecha salarial que se obtendría al comparar salarios en pesos pero si permite una comparación en gráficas con mucha mayor claridad. La dolarización fue calculada con el valor del dólar libre o dólar blue respectivo de cada fecha para evitar confusiones al utilizar el dólar oficial en períodos de restricción cambiaria.  
+Los salarios informados son salarios brutos mensuales (exentos de aportes y deducciones  particulares) y se encuentran en pesos argentinos. Debido a lo dificultoso de interpretar los datos y visualizaciones del salario en pesos durante un período de varios años, a causa de la depreciación frente a la inflación, se van a utilizar salarios dolarizados. Dicha dolarización no altera la brecha salarial que se obtendría al comparar salarios en pesos, pero sí permite una comparación en gráficas con mayor claridad. La dolarización fue calculada con el valor del dólar libre o dólar blue respectivo de cada fecha para evitar confusiones al utilizar el dólar oficial en períodos de restricción cambiaria.  
 
-De las distintas clasificaciones de actividad que hay sobre las empresas se seleccionó la CLAE2 que cuenta con más de 80 categorías perfectamente descriptas.
+De las distintas clasificaciones de actividad que hay sobre las empresas se seleccionó la CLAE2 que cuenta con más de 80 categorías perfectamente descritas.
 
-### **Data**
+### **Datos**
 ***
-Toda la información utilizada es pública, proveniente del Ministerio de Economía de la Nación Argentina y obtenida por medio de la web https://datos.gob.ar/. Para este estudio en particular se utilizaron los datasets de <a href='http://datos.produccion.gob.ar/dataset/803a2436-0240-4f87-916b-25cad0213918/archivo/'> Percentiles de salario total empresas por género y clae2 </a> y <a href='http://datos.produccion.gob.ar/dataset/803a2436-0240-4f87-916b-25cad0213918/archivo/82c6602b-0138-4de5-a7c3-33e397750dec'> Diccionario de claes </a>.    
+Toda la información utilizada es pública, proveniente del Ministerio de Economía de la Nación Argentina y obtenida por medio de la web <a href='https://datos.gob.ar/'> https://datos.gob.ar/</a>.  
+
+Si desea consultar los datasets del estudio incluyendo su metodología de construcción, puede hacerlo en el siguiente <a href='http://datos.produccion.gob.ar/dataset/percentiles-de-salarios-por-genero-y-actividad'> link</a>.
 
 Estos datos se obtienen en formato CSV listos para iniciar su proceso de transformación y carga en la Jupyter Notebook.
 
-Por otro lado, para la obtención del valor del dólar libre o dólar blue histórico se utilizó la página web de <a href='https://www.ambito.com/contenidos/dolar-informal-historico.html'> Ámbito Financiero </a>. En este caso, el archivo obtenido fue un .xlsx de Excel al que se le realizaron operaciones de transformación mínimas para obtener el CSV de trabajo.
+Por otro lado, para la obtención del valor del dólar libre o dólar blue histórico se utilizó la sección correspondiente de la página web de <a href='https://www.ambito.com/contenidos/dolar-informal-historico.html'> Ámbito Financiero</a>. En este caso, el archivo obtenido fue un .xlsx de Excel al que se le realizaron operaciones de transformación mínimas para obtener el CSV de trabajo.  
 
-Si desea consultar la metodología utilizada por el Ministerio de Economía de la Nación Argentina para la realización de estas series de información puede hacerlo en el siguiente  <a href='https://datos.gob.ar/dataset/produccion-percentiles-salarios-por-genero-actividad/archivo/produccion_3bcac8aa-7636-4e18-80d3-1f63da309ec3'>  link </a>.
 
 ### **Metodología**
 ***
-La metodología de extracción, transformación y carga de los datos se realizó en Python por medio de librerías como Numpy y Pandas. Dejo una referencia a la <a href='https://github.com/gastonvermeulen/brecha_salarial/blob/main/notebooks/brecha_salarial_notebook.ipynb'> Jupyter Notebook </a> donde se encuentra todo el proceso documentado. 
+La metodología de extracción, transformación y carga de los datos se realizó en Python por medio de librerías como Numpy y Pandas. Dejo una referencia a la <a href='https://github.com/gastonvermeulen/brecha_salarial/blob/main/notebooks/brecha_salarial_notebook.ipynb'> Jupyter Notebook</a> donde se encuentra todo el proceso documentado. 
 
 
 ### **Comparación y visualización de los datos**
 ***
-Los datos procesados dieron origen a 4 archivos CSV: valor histórico del dólar, diccionario de actividades clae2, salarios dolarizados de hombres según actividad y salarios dolarizados de mujeres según actividad. Tras un correcto modelado de los datos a través de PowerBI se obtienen diversas gráficas que permiten comparar, visualizar y extraer información relevante.
+Los datos procesados dieron origen a 4 archivos CSV: valor histórico del dólar, diccionario de actividades clae2, salarios dolarizados de hombres según actividad y salarios dolarizados de mujeres según actividad. Tras un correcto modelado de los datos a través de Power BI se obtienen diversas gráficas que permiten comparar, visualizar y extraer información relevante.
 
-En el siguiente <a href='https://app.powerbi.com/view?r=eyJrIjoiYjRhN2RiOGMtNzM2OC00N2U1LTg4YjQtYzIxMTBmMTlhMzA2IiwidCI6Ijc5M2I4YWQ1LTU0ZWMtNDYyOS04ZWViLWM4MDRjMWEzOGM1ZCJ9'> link </a> puede interactuar de forma dinámica con estas visualizaciones y sacar sus propias conclusiones. -Se recomienda utilizar una PC para interactuar de la mejor forma con la visualización aunque es posible realizarse mediante celulares o móviles-
+En el siguiente <a href='https://app.powerbi.com/view?r=eyJrIjoiYjRhN2RiOGMtNzM2OC00N2U1LTg4YjQtYzIxMTBmMTlhMzA2IiwidCI6Ijc5M2I4YWQ1LTU0ZWMtNDYyOS04ZWViLWM4MDRjMWEzOGM1ZCJ9'> link</a> puede interactuar de forma dinámica con estas visualizaciones y sacar sus propias conclusiones. -Si bien es posible realizarse mediante celulares o móviles, se recomienda utilizar una PC para una mejor experiencia en la interacción-
 
 Esta visualización le permite segmentar por todas, una o varias actividades y también segmentar por diversos períodos de tiempo (dentro del 01/2007 al 06/2022). Las gráficas muestran la comparación entre el salario bruto dolarizado de hombres y mujeres, y la evolución de la brecha salarial en el tiempo.
 
@@ -60,4 +64,4 @@ A pesar de todo, es notorio destacar que en la gran mayoría de actividades hay 
  
 
 ***
-Este informe fue realizado por  <a href='https://www.linkedin.com/in/gast%C3%B3n-vermeulen-73a93239/'> Gastón Vermeulen </a>
+Este informe fue realizado por <a href='https://www.linkedin.com/in/gast%C3%B3n-vermeulen-73a93239/'> Gastón Vermeulen</a>
