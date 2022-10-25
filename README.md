@@ -34,9 +34,9 @@ La metodología de extracción, transformación y carga de los datos se realizó
 
 ### **Comparación y visualización de los datos**
 ***
-Los datos ya procesados dieron origen a 4 archivos CSV: valor histórico del dólar, diccionario de actividades clae2, salarios dolarizados de hombres según actividad y salarios dolarizados de mujeres según actividad. Tras un correcto modelado de los datos a través de PowerBI se obtienen diversas gráficas que permiten comparar, visualizar y extraer información relevante.
+Los datos procesados dieron origen a 4 archivos CSV: valor histórico del dólar, diccionario de actividades clae2, salarios dolarizados de hombres según actividad y salarios dolarizados de mujeres según actividad. Tras un correcto modelado de los datos a través de PowerBI se obtienen diversas gráficas que permiten comparar, visualizar y extraer información relevante.
 
-En el siguiente <a href='https://app.powerbi.com/view?r=eyJrIjoiNmU3NDM4NzMtNDhmYi00YjNhLWFkNmItZGMxYTBjMGU1MDkwIiwidCI6Ijk2ZTcyZDA0LTU3MGQtNGM2YS1hNzNkLTQzMmM2Y2EwNTU0NSJ9'> link </a> puede interactuar de forma dinámica con estas visualizaciones y sacar sus propias conclusiones. -Se recomienda utilizar una PC para interactuar de la mejor forma con la visualización aunque es posible realizarse mediante celulares o móviles-
+En el siguiente <a href='https://app.powerbi.com/view?r=eyJrIjoiYjRhN2RiOGMtNzM2OC00N2U1LTg4YjQtYzIxMTBmMTlhMzA2IiwidCI6Ijc5M2I4YWQ1LTU0ZWMtNDYyOS04ZWViLWM4MDRjMWEzOGM1ZCJ9'> link </a> puede interactuar de forma dinámica con estas visualizaciones y sacar sus propias conclusiones. -Se recomienda utilizar una PC para interactuar de la mejor forma con la visualización aunque es posible realizarse mediante celulares o móviles-
 
 Esta visualización le permite segmentar por todas, una o varias actividades y también segmentar por diversos períodos de tiempo (dentro del 01/2007 al 06/2022). Las gráficas muestran la comparación entre el salario bruto dolarizado de hombres y mujeres, y la evolución de la brecha salarial en el tiempo.
 
